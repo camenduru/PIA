@@ -225,7 +225,7 @@ class I2VPipeline(DiffusionPipeline, IPAdapterMixin, TextualInversionLoaderMixin
             # load text encoder
             text_encoder_checkpoint = convert_ldm_clip_checkpoint(base_model_state_dict)
             if text_encoder_checkpoint:
-                text_encoder.load_state_dict(text_encoder_checkpoint)
+                text_encoder.load_state_dict(text_encoder_checkpoint, strict=False)
 
             print(" <<< Loaded DreamBooth        <<<")
 
