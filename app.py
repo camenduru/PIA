@@ -237,11 +237,11 @@ def ui():
     with gr.Blocks(css=css) as demo:
         motion_idx = gr.State(0)
         gr.HTML(
-            "<div align='center'><font size='7'> <img src=\"file/pia.png\" style=\"height: 72px;\"/ > Your Personalized Image Animator via Plug-and-Play Modules in Text-to-Image Models </font></div>"
+            "<div align='center'><font size='5'> <img src=\"file/pia.png\" style=\"height: 30px;\"/ > Your Personalized Image Animator via Plug-and-Play Modules in Text-to-Image Models </font></div>"
         )
         with gr.Row():
             gr.Markdown(
-                "<div align='center'><font size='5'><a href='https://pi-animator.github.io/'>Project Page</a> &ensp;"  # noqa
+                "<div align='center'><font size='3'><a href='https://pi-animator.github.io/'>Project Page</a> &ensp;"  # noqa
                 "<a href='https://arxiv.org/abs/2312.13964/'>Paper</a> &ensp;"
                 "<a href='https://github.com/open-mmlab/pia'>Code</a> &ensp;"  # noqa
                 "<a href='https://openxlab.org.cn/apps/detail/zhangyiming/PiaPia'>Demo</a> </font></div>"  # noqa
